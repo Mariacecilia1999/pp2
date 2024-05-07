@@ -18,12 +18,15 @@ header{
    display: flex;
    justify-content: space-around;
    align-items: center;
+   padding: 30px;
 }
 
 
-header nav ul {
+header nav ul, header  nav ul li a{
    list-style: none;
    display: flex;
+   text-decoration: none;
+   color: black;
 }
 
 header nav ul li{
@@ -40,10 +43,10 @@ main{
 }
 
 #servicios{
-   margin-top: 30px;
+   margin-top: 60px;
    padding-top: 20px;
    padding-bottom: 20px;
-   width: 60%;
+   width: 70%;
    background-color: rgb(235, 235, 237);
    display: flex;
    justify-content: center;
@@ -64,8 +67,31 @@ main{
    padding: 4px 20px;
 }
 
+#servicios  .tituloServicios{
+   margin-top: 40px;
+}
+
 #servicios .servicios h3{
    font-size: 21px;
    text-align: center;
    padding-bottom: 20px;
+}
+
+
+#nosotros{
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+#nosotros h2{
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+#nosotros p{
+   padding: 20px 20px;
 }
