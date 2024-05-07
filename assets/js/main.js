@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
        const serviceDiv = document.createElement("div");
        serviceDiv.classList.add("servicios");
 
-       const serviceName = document.createElement("h2");
+       const serviceName = document.createElement("h3");
        serviceName.textContent = service.nombre;
 
        const serviceDescription = document.createElement("p");
