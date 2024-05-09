@@ -113,3 +113,24 @@ main{
 #about p{
    padding: 20px 20px;
 }
+
+
+#contact{
+   text-align: center;
+   display: flex;
+   width: 80%;
+   flex-direction: column;
+}
+
+.number{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+.contactData{
+   display: flex;
+   flex-direction: column-reverse;
+   flex-direction: column;
+
+}

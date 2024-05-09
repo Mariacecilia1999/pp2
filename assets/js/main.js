@@ -29,10 +29,23 @@ const showDataServices = (data) =>{
     }
 }
 
+const showDataContact = (data) =>{
+    console.log(data)
+    Object.entries(data).forEach(([key, value]) =>{
+        console.log(value)
+        if(key == 'correo'){
+            $('.contactData').innerHTML += `<div><h4>${key} ${value}</h4></div>`
+        }else{
+            $('.number').innerHTML += `<p>${key} ${value}</p>`
+        }
+    })
+}
+
 
 const  initializer = () =>{
     showDataAbout(data.fundador)
     showDataServices(data.servicios)
+    showDataContact(data.contacto)
 }
 
 
