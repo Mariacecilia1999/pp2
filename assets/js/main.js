@@ -20,6 +20,9 @@ const showDataServices = (data) =>{
         const dataObj = data[service]
         $('.servicesCard').innerHTML += `<div class='card'>
                                             <h3 class='titleCard'>${dataObj.nombre}<h3/>
+                                            <div class='containerImg'>
+                                                <img src= "./assets/img/equilibrar.png">
+                                            </div>
                                             <div class='textsCard'>
                                                 <p>${dataObj.descripcion}</p>
                                                 <p class='cost'>${dataObj.costo}</p>
