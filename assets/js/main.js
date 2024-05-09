@@ -1,29 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-   const servicesSection = document.createElement("section");
-   servicesSection.setAttribute("id", "servicios");
+const $ = selector => document.querySelector(selector)
+const $$ = selector => document.querySelectorAll(selector)
 
-   const main = document.querySelector("main");
-   main.appendChild(servicesSection);
 
-   const servicesData = data.servicios;
+const showDataAbout = (data) =>{
+    console.log(data)
 
-   servicesData.forEach(service => {
-       const serviceDiv = document.createElement("div");
-       serviceDiv.classList.add("servicios");
+    Object.entries(data).forEach(([key, value]) =>{
+        console.log(data)
+        if(key === 'experiencia'){
+            console.log(value)
+            $('#about').innerHTML += `<div class="about">
+                                        <p>${value}</p>
+                                        <img src="./assets/img/man-5806012_640.jpg" alt="Imagen de abogado firmando">
+                                    </div>`
+        }
+       
 
-       const serviceName = document.createElement("h3");
-       serviceName.textContent = service.nombre;
+    })   
+    }
 
-       const serviceDescription = document.createElement("p");
-       serviceDescription.textContent = service.descripcion;
 
-       const serviceCost = document.createElement("p");
-       serviceCost.textContent = "Costo: " + service.costo;
 
-       serviceDiv.appendChild(serviceName);
-       serviceDiv.appendChild(serviceDescription);
-       serviceDiv.appendChild(serviceCost);
 
-       servicesSection.appendChild(serviceDiv);
-   });
-});
+
+
+const  initializer = () =>{
+    showDataAbout(data.fundador)
+}
+
+
+window.addEventListener('load', initializer)
