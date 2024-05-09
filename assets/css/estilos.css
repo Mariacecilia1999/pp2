@@ -42,7 +42,7 @@ main{
    margin-top: 55px;
 }
 
-#servicios{
+#services{
    margin-top: 60px;
    padding-top: 20px;
    padding-bottom: 20px;
@@ -51,34 +51,52 @@ main{
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
    gap: 50px;
    flex-wrap: wrap;
 }
 
-#servicios .servicios{
+#services .servicesCard{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 30px;
+}
+
+
+#services .servicesCard .card{
    width: 250px;
    height: 300px;
    border: 1px solid black;
    border-radius: 3%;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-around;
    background-color: white;
    padding: 4px 20px;
+   margin: 30px;
 }
 
-#servicios  .tituloServicios{
-   margin-top: 40px;
-}
-
-#servicios .servicios h3{
+.titleCard{
    font-size: 21px;
    text-align: center;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 
 
-#nosotros{
+
+.card p{
+   font-size: 14px;
+
+}
+
+.card .cost{
+   font-size: 12px;
+}
+
+
+#about{
    display: flex;
    flex-direction: column;
    width: 70%;
@@ -86,12 +104,12 @@ main{
    margin-bottom: 60px;
 }
 
-#nosotros h2{
+#about h2{
    text-align: center;
    padding: 20px;
    margin-bottom: 20px;
 }
 
-#nosotros p{
+#about p{
    padding: 20px 20px;
 }
