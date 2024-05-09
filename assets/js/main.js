@@ -34,7 +34,7 @@ const showDataContact = (data) =>{
     Object.entries(data).forEach(([key, value]) =>{
         console.log(value)
         if(key == 'correo'){
-            $('.contactData').innerHTML += `<div><h4>${key} ${value}</h4></div>`
+            $('.contactData').innerHTML += `<div class='email'><h4>${key} ${value}</h4></div>`
         }else{
             $('.number').innerHTML += `<p>${key} ${value}</p>`
         }
