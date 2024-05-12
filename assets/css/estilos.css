@@ -136,8 +136,8 @@ main{
    display: flex;
    width: 70%;
    background-color: beige;
-   height: 35vh;
    flex-direction: column;
+   padding: 30px 40px;
 }
 
 #contact h2{
@@ -187,4 +187,30 @@ footer{
 
 .containerImg img{
    width: 50px;
+}
+
+
+/*Responsive mobile max 600px*/
+
+
+@media (max-width: 600px) {
+
+   header{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   main #about, #about{
+      width:100vw;
+   }
+
+   #about img{
+      max-width: 100%;
+   }
+
+   main #services{
+      width: 100vw;
+   }
+
+ 
 }
