@@ -200,16 +200,12 @@ footer{
       flex-direction: column;
    }
    
-   main #about, #about{
+   main #about, #about, main #services, #contact{
       width:100vw;
    }
 
    #about img{
       max-width: 100%;
-   }
-
-   main #services{
-      width: 100vw;
    }
 
  
